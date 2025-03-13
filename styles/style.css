@@ -53,12 +53,15 @@ body{
     gap: 15px;
 }
 .eslogan__titulo{
+    display: flex;
+    flex-direction: column;
     font-family: var(--playfair);
     font-style: italic;
     font-size: 6rem;
 }
 
 .img__logo{
+    padding: 0% 7% 0% 0%;
     width: 50%;
 }
 
@@ -68,4 +71,37 @@ body{
     text-align: center;
     color: var(--rosa-claro);
     font-size: 1rem;
+}
+
+@media (max-width: 1200px) {
+    
+    .header{
+        padding: 7%;  
+    }
+    .header__nav{
+        justify-content: center;
+    }
+    .main{
+        flex-direction: column-reverse;
+    }
+    
+    .eslogan{
+        align-items: center;
+    }
+
+    .eslogan__titulo{
+        font-size: 450%;
+    }
+
+    .eslogan__texto{
+        text-align: center;
+    }
+
+    .img__logo{
+        padding: auto;
+    }
+
+    .footer{
+        margin-top: 5%;
+    }
 }
